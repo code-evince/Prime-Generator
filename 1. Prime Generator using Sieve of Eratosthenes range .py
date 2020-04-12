@@ -10,7 +10,7 @@ for _ in range(int(input())):
         for j in range(max(m//i,2),(n//i)+1):
             primes[i*j] = 1
     for i in range(max(m,2),n+1):
-        if i not in primes:
-            print(i)
+        if i not in primes:     # this is the only purpose of using dictionary as data structure so  
+            print(i)            # that this step could become O(1) because "if i in dict" is O(1).
     print()
 # this code marks primes as 1 and composite as 0 in dictionary by using sieve of eratosthenes
